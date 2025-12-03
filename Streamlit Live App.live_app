@@ -1,0 +1,6 @@
+{
+  "entrypoint": "pip install --no-cache-dir -r requirements.txt && streamlit run app.py --server.port 8000",
+  "inactivity_timeout_in_seconds": 600,
+  "login_required": true,
+  "extra_params": {}
+}
