@@ -9,15 +9,15 @@ project-name/
 ├── src/               # Python source code modules
 ├── app.py             # Main entrypoint of the Streamlit application
 ├── assets/            # Images, data files, and other static resources
-├── requirements.txt   # Python dependencies
 ├── docker/
-│   └── Dockerfile    # Dockerfile for local development (can also build MINEO Worker Images)
+│   │── Dockerfile    # Dockerfile for local development (can also build MINEO Worker Images)
+│   │── requirements.txt   # Python dependencies
 └── docker-compose.yml # Docker Compose configuration for local development
 ```
 
 ## Requirements
 
-- Python 3.8 or higher
+- Python 3.12 or higher
 - Dependencies listed in `requirements.txt`
 
 ## Quick Start
@@ -31,10 +31,10 @@ project-name/
 2. Install dependencies:
    ```bash
    # Using pip
-   pip install -r requirements.txt
+   pip install -r docker/requirements.txt
    
    # Alternative using uv (if available)
-   uv pip install -r requirements.txt
+   uv pip install -r docker/requirements.txt
    ```
 
 3. Run the Streamlit application:
